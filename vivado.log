@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 29 13:04:12 2022
+# Process ID: 65
+# Current directory: /home/nicola
+# Command line: vivado
+# Log file: /home/nicola/vivado.log
+# Journal file: /home/nicola/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw_manager
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nicola/.var/app/com.github.corna.Vivado/data/xilinx-install/Vivado/2020.2/data/ip'.
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/DESD/LAB2/Piazza/spaceshooter_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/DESD/LAB2/Piazza/spaceshooter_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_project
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/nicola/.Xil/Vivado-65-cornaLaptop/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 29 15:02:19 2022...
+open_project /home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/.Xil/Vivado-66-nicola-desktop/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.ipdefs/IPs_DESD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nicola/.var/app/com.github.corna.Vivado/data/xilinx-install/Vivado/2020.2/data/ip'.
+open_bd_design {/home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- DigiLAB:ip:axi4stream_spi_master:1.0 - axi4stream_spi_master_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:module_ref:digilent_jstk2:1.0 - digilent_jstk2_0
+Adding component instance block -- DigiLAB:ip:AXI4Stream_UART:1.1 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:jstk_uart_bridge:1.0 - jstk_uart_bridge_0
+Successfully read diagram <design_1> from block design file </home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 8518.090 ; gain = 62.605 ; free physical = 2798 ; free virtual = 26677
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+create_project jstk2_interface {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nicola/.var/app/com.github.corna.Vivado/data/xilinx-install/Vivado/2020.2/data/ip'.
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new
+file mkdir {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new}
+close [ open {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new/jstk_uart_bridge.vhd} w ]
+add_files {{/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new/jstk_uart_bridge.vhd}}
+close [ open {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new/digilent_jstk2.vhd} w ]
+add_files {{/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/sources_1/new/digilent_jstk2.vhd}}
+update_compile_order -fileset sources_1
+archive_project {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface.xpr.zip} -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-65-cornaLaptop' for archiving project
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface.xpr.zip} -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-65-cornaLaptop' for archiving project
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+close_project
+close_project
+open_project /home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/DESD/LAB2/spaceshooter_jstk2.xpr/spaceshooter_jstk2/spaceshooter_jstk2.ipdefs/IPs_DESD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nicola/.var/app/com.github.corna.Vivado/data/xilinx-install/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nicola/.var/app/com.github.corna.Vivado/data/xilinx-install/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new
+file mkdir /home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1
+file mkdir {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new}
+close [ open {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new/io.xdc} w ]
+add_files -fileset constrs_1 {{/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.srcs/constrs_1/new/io.xdc}}
+archive_project {/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface.xpr.zip} -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-65-cornaLaptop' for archiving project
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nicola/Documents/Vivado/DESD/2021-2022/LAB 2/jstk2_interface/jstk2_interface.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...

@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"362,101",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 5 -x 1300 -y 440 -defaultsOSRD
+preplace port SPI_M_0 -pg 1 -lvl 5 -x 1300 -y 620 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -20 -y 580 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -20 -y 500 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 100 -y 570 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 380 -y 540 -defaultsOSRD
+preplace inst AXI4Stream_UART_0 -pg 1 -lvl 4 -x 1110 -y 460 -defaultsOSRD
+preplace inst axi4stream_spi_master_0 -pg 1 -lvl 4 -x 1110 -y 690 -defaultsOSRD
+preplace inst jstk_uart_bridge_0 -pg 1 -lvl 3 -x 740 -y 120 -defaultsOSRD
+preplace inst digilent_jstk2_0 -pg 1 -lvl 3 -x 740 -y 420 -defaultsOSRD
+preplace netloc reset_1 1 0 2 0 500 190
+preplace netloc clk_wiz_0_clk_out1 1 1 3 200 440 550 560 940
+preplace netloc clk_wiz_0_locked 1 1 1 N 580
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 2 560 570 950
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 N 540 930J
+preplace netloc jstk_uart_bridge_0_led_r 1 2 2 600 550 910
+preplace netloc jstk_uart_bridge_0_led_g 1 2 2 610 530 900
+preplace netloc jstk_uart_bridge_0_led_b 1 2 2 590 280 880
+preplace netloc sys_clock_1 1 0 1 NJ 580
+preplace netloc digilent_jstk2_0_jstk_x 1 2 2 580 270 870
+preplace netloc digilent_jstk2_0_jstk_y 1 2 2 570 310 860
+preplace netloc digilent_jstk2_0_btn_jstk 1 2 2 600 290 880
+preplace netloc digilent_jstk2_0_btn_trigger 1 2 2 610 260 890
+preplace netloc digilent_jstk2_0_m_axis 1 3 1 920 380n
+preplace netloc axi4stream_spi_master_0_M_AXIS 1 2 3 610 300 NJ 300 1260
+preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 2 3 590 250 NJ 250 1270
+preplace netloc jstk_uart_bridge_0_m_axis 1 3 1 940 90n
+preplace netloc axi4stream_spi_master_0_SPI_M 1 4 1 1270J 620n
+preplace netloc AXI4Stream_UART_0_UART 1 4 1 1280J 440n
+levelinfo -pg 1 -20 100 380 740 1110 1300
+pagesize -pg 1 -db -bbox -sgen -130 0 1410 770
+"
+}
+{
+   "da_board_cnt":"1"
+}
